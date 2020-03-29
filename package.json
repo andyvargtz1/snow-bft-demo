@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open --port 8888",
     "build": "webpack --mode production"
   },
   "author": {
@@ -26,7 +27,8 @@
     "typescript": "^3.3.3",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.2",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.2",
@@ -44,7 +46,7 @@
     "color": "^3.1.0",
     "lru-cache": "^5.1.1",
     "materialcolorize": "^1.1.7",
-    "react": "^16.8.1",
+    "react": "^16.13.0",
     "react-chartjs-2": "^2.7.4",
     "react-dates": "^19.0.0",
     "react-dom": "^16.8.1",
