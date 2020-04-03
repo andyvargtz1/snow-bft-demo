@@ -60,18 +60,18 @@ interface SnowProps {
 }
 
 function getRandomInt(max: number) {
-    return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * Math.floor(max));
 }
 
 /* Code from: https://stackoverflow.com/a/11935263/544806 */
 function getRandomSubarray(arr: number[], size: number) {
     let shuffled = arr.slice(0), i = arr.length, min = i - size, temp, index;
-    while (i-- > min) {
-        index = Math.floor((i + 1) * Math.random());
-        temp = shuffled[index];
-        shuffled[index] = shuffled[i];
-        shuffled[i] = temp;
-    }
+    //while (i-- > min) {
+    //    index = Math.floor((i + 1) * Math.random());
+    //    temp = shuffled[index];
+    //    shuffled[index] = shuffled[i];
+    //    shuffled[i] = temp;
+    //}
     return shuffled.slice(min);
 }
 
